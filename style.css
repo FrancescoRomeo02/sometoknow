@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+	background-color: #ccc;
+}
+
+h1 {
+	text-align: center;
+	color: rgb(34, 34, 34);
+	font-family: "Roboto", sans-serif;
+	font-size: 10vw;
+}
+
+.foto {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 2rem;
+}
+
+.la_foto {
+	max-width: 100%;
+	height: auto;
+	filter: grayscale(100%);
+	animation: 2s ease;
+}
+
+@keyframes color {
+	0% {
+		filter: grayscale(100%);
+	}
+	100% {
+		filter: grayscale(0%);
+	}
+}
+
+@keyframes text-pop-up-top {
+	0% {
+		transform: translateY(0);
+		transform-origin: 50% 50%;
+		text-shadow: none;
+	}
+	100% {
+		transform: translateY(-5vw);
+		transform-origin: 50% 50%;
+		text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+			0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+			0 50px 30px rgba(0, 0, 0, 0.3);
+	}
+}
