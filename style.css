@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+html {
+	height: 100%;
+}
+
+.icone {
+	position: relative;
+	top: 3rem;
+	margin: auto;
+	height: auto;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.icon {
+	height: auto;
+	width: 50px;
+}
+
+.icon:hover {
+	animation: slide-top 0.2s both;
+}
+
+.container {
+	position: relative;
+	top: 7rem;
+	height: auto;
+	width: 85%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5rem;
+}
+
+.container_sx {
+	height: auto;
+	width: 45%;
+	background-color: #f6f6f6;
+	padding: 1rem;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px 0px #808080;
+}
+.container_photo {
+	float: left;
+}
+
+.over_photo {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	position: relative;
+	top: 60px;
+	left: 300px;
+}
+
+.container_video {
+	float: right;
+}
+
+.over_video {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	position: relative;
+	top: 60px;
+	left: 12px;
+}
+
+.container_sx {
+	height: auto;
+	width: 45%;
+	background-color: #f6f6f6;
+	padding: 1rem;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px 0px #808080;
+}
+
+/*------------
+animation
+------------*/
+
+@keyframes slide-top {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-5px);
+	}
+}
