@@ -1,0 +1,112 @@
+:root {
+  --green: #01c42b;
+  --blue: #0145c4;
+  --red: #c41e01;
+  --pink: #c401c4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 800px;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  transform-style: preserve-3d;
+  min-height: 90vh;
+  width: 30rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.plant {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plant img {
+  widows: 20rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+.circle {
+  width: 13rem;
+  height: 13rem;
+  background: linear-gradient(
+    to right,
+    rgba(85, 240, 13, 0.75),
+    rgba(19, 148, 105, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+
+.colors button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+
+button.active {
+  color: white;
+  background: var(--green);
+}
+
+.buy {
+  margin-top: 5rem;
+}
+
+.buy button {
+  width: 100%;
+  padding: 1rem 0rem;
+  color: white;
+  background: rgba(85, 240, 13, 0.75);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: all 0.75s ease-out;
+}
