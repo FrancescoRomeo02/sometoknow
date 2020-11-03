@@ -1,9 +1,5 @@
-:root {
-  --green: #01c42b;
-  --blue: #0145c4;
-  --red: #c41e01;
-  --pink: #c401c4;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +7,7 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -47,14 +44,14 @@ body {
   transition: all 0.75s ease-out;
 }
 
+#image {
+  transition: all 0.75s ease-out;
+}
+
 .circle {
   width: 13rem;
   height: 13rem;
-  background: linear-gradient(
-    to right,
-    rgba(85, 240, 13, 0.75),
-    rgba(19, 148, 105, 0.75)
-  );
+  background: linear-gradient(to right, var(--primary), var(--secondary));
   position: absolute;
   border-radius: 50%;
   z-index: 1;
@@ -63,6 +60,7 @@ body {
 .info h1 {
   font-size: 3rem;
   transition: all 0.75s ease-out;
+  color: var(--secondary);
 }
 
 .info h3 {
@@ -92,7 +90,7 @@ body {
 
 button.active {
   color: white;
-  background: var(--green);
+  background: var(--primary);
 }
 
 .buy {
@@ -103,7 +101,7 @@ button.active {
   width: 100%;
   padding: 1rem 0rem;
   color: white;
-  background: rgba(85, 240, 13, 0.75);
+  background: var(--primary);
   border: none;
   border-radius: 30px;
   cursor: pointer;

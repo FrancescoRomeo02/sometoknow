@@ -8,20 +8,25 @@ const buy = document.querySelector('.buy button')
 const colors = document.querySelector('.colors')
 
 const color = document.getElementsByClassName('color')
-const arraycolors = ['--red','--blue','--green', '--pink' ]
+const arraycolors = ['red','blue','green', 'pink' ]
 //change color
 function get_id(btn){
+    let primary = btn.getAttribute("primary");
+    let secondary = btn.getAttribute("secondary");
+    document.documentElement.style.setProperty("--primary", primary);
+    document.documentElement.style.setProperty("--secondary", secondary);
+
     for (let index = 0; index <= 3; index++) {
         color[parseInt(index)].classList.remove('active')    
     }
     color[parseInt(btn.id)].classList.add('active')
-    color[parseInt(btn.id)].style.active.background = `var(${arraycolors[btn.id]})`
+   let img = document.getElementById('image').src=`./${arraycolors[[parseInt(btn.id)]]}.png`
 }
 
 
 container.addEventListener('mousemove', (e) => {
-    let xAsix = (window.innerWidth / 2 - e.pageX) /25;
-    let yAsix = (window.innerHeight / 2 -e.pageY)/25;
+    let xAsix = (window.innerWidth / 2 - e.pageX) /20;
+    let yAsix = (window.innerHeight / 2 -e.pageY)/20;
     card.style.transform = `rotateY(${xAsix}deg) rotateX(${yAsix}deg)`;
 
 });
