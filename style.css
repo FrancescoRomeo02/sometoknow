@@ -55,6 +55,8 @@ body {
   position: absolute;
   border-radius: 50%;
   z-index: 1;
+  transition: all 0.75s ease-out;
+
 }
 
 .info h1 {
@@ -98,6 +100,7 @@ button.active {
 }
 
 .buy button {
+  font-size: 30px;
   width: 100%;
   padding: 1rem 0rem;
   color: white;
